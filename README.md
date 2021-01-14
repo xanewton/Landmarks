@@ -18,6 +18,7 @@ References
 - https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation
 - https://developer.apple.com/tutorials/swiftui/handling-user-input
 - https://developer.apple.com/tutorials/swiftui/drawing-paths-and-shapes
+- https://developer.apple.com/tutorials/swiftui/animating-views-and-transitions
 
 
 
