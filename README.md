@@ -20,6 +20,7 @@ References
 - https://developer.apple.com/tutorials/swiftui/drawing-paths-and-shapes
 - https://developer.apple.com/tutorials/swiftui/animating-views-and-transitions
 - https://developer.apple.com/tutorials/swiftui/composing-complex-interfaces
+- https://developer.apple.com/tutorials/swiftui/working-with-ui-controls
 
 
 
