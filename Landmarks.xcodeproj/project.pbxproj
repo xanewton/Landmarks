@@ -65,6 +65,7 @@
 		46F66D1625B67F40002E90EB /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFF3D625ABA8EE001D7DCA /* LandmarkList.swift */; };
 		46F66D1725B67F40002E90EB /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4627037125AA768E00881B70 /* CircleImage.swift */; };
 		46F66D1825B67F40002E90EB /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F0A60625AFE3140040DE1C /* Hike.swift */; };
+		46F66D2B25B680FB002E90EB /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F66D2A25B680FB002E90EB /* LandmarkDetail.swift */; };
 		46FEB80025AD44E9007B94D6 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FEB7FF25AD44E9007B94D6 /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -180,6 +181,7 @@
 		46F66CF425B67C4D002E90EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46F66CF625B67C4D002E90EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46F66CF725B67C4D002E90EB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		46F66D2A25B680FB002E90EB /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		46FEB7FF25AD44E9007B94D6 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -389,6 +391,7 @@
 				46F66CF625B67C4D002E90EB /* Info.plist */,
 				46F66CF725B67C4D002E90EB /* PushNotificationPayload.apns */,
 				46F66CF325B67C4D002E90EB /* Preview Content */,
+				46F66D2A25B680FB002E90EB /* LandmarkDetail.swift */,
 			);
 			path = "WatchLandmarks Extension";
 			sourceTree = "<group>";
@@ -677,6 +680,7 @@
 				46F66D1225B67F40002E90EB /* LandmarksApp.swift in Sources */,
 				46F66D1825B67F40002E90EB /* Hike.swift in Sources */,
 				46F66D1025B67F40002E90EB /* Profile.swift in Sources */,
+				46F66D2B25B680FB002E90EB /* LandmarkDetail.swift in Sources */,
 				46F66D1725B67F40002E90EB /* CircleImage.swift in Sources */,
 				46F66CEA25B67C4C002E90EB /* ContentView.swift in Sources */,
 				46F66CF025B67C4C002E90EB /* ComplicationController.swift in Sources */,
