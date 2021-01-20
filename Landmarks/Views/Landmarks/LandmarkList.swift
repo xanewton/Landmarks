@@ -11,15 +11,16 @@ struct LandmarkList: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
     @State private var filter = FilterCategory.all
-    
-    enum FilterCategory: String, CaseIterable, Identifiable {
-            case all = "All"
-            case lakes = "Lakes"
-            case rivers = "Rivers"
-            case mountains = "Mountains"
+    @State private var selectedLandmark: Landmark?
 
-            var id: FilterCategory { self }
-        }
+    enum FilterCategory: String, CaseIterable, Identifiable {
+        case all = "All"
+        case lakes = "Lakes"
+        case rivers = "Rivers"
+        case mountains = "Mountains"
+
+        var id: FilterCategory { self }
+    }
 
     var filteredLandmarks: [Landmark] {
         modelData.landmarks.filter { landmark in
@@ -27,23 +28,24 @@ struct LandmarkList: View {
                 && (filter == .all || filter.rawValue == landmark.category.rawValue)
         }
     }
-    
+
     var title: String {
         let title = filter == .all ? "Landmarks" : filter.rawValue
         return showFavoritesOnly ? "Favorite \(title)" : title
     }
 
+    var index: Int? {
+        modelData.landmarks.firstIndex(where: { $0.id == selectedLandmark?.id })
+    }
+
     var body: some View {
         NavigationView {
-            List {
-                Toggle(isOn: $showFavoritesOnly) {
-                    Text("Favorites only")
-                }
-
+            List(selection: $selectedLandmark) {
                 ForEach(filteredLandmarks) { landmark in
                     NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
                         LandmarkRow(landmark: landmark)
                     }
+                    .tag(landmark)
                 }
             }
             .navigationTitle(title)
@@ -66,9 +68,10 @@ struct LandmarkList: View {
                     }
                 }
             }
-            
+
             Text("Select a Landmark")
         }
+        .focusedValue(\.selectedLandmark, $modelData.landmarks[index ?? 0])
     }
 }
 
